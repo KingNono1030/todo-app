@@ -1,0 +1,12 @@
+.todo-container__todo-input {
+  margin-right: 10px;
+}
+
+.todo-container__todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+button:hover {
+  background-color: #ff3333;
+}
