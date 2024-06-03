@@ -1,0 +1,17 @@
+$button-color--default: '##ff6666';
+$button-color--hover: '##ff3333';
+$text-color--white: '##ff3333';
+
+button {
+  padding: 3px 6px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: $button-color--default;
+  color: $text-color--white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-color--hover;
+  }
+}

@@ -1,11 +1,10 @@
 import Button from './Button';
-import './TodoItem.css';
 
 function TodoItem({ todo, deleteTodo }) {
   return (
-    <li>
+    <li className="todo-list__todo">
       {todo}
-      <Button className="todo-list__todo" onClick={deleteTodo}>
+      <Button className="todo-list__button--delete" onClick={deleteTodo}>
         Delete
       </Button>
     </li>

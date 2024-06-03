@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import TodoItem from './TodoItem';
 import Button from './Button';
-import './TodoList.css';
+import './TodoList.scss';
 
 function TodoList() {
   const [todos, setTodos] = useState([]);
