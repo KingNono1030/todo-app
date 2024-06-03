@@ -36,16 +36,18 @@ function TodoList() {
   return (
     <div className="todo-container">
       <h1 className="todo-container__header-text">Todo List</h1>
-      <input
-        className="todo-container__todo-input"
-        type="text"
-        value={newTodo}
-        onChange={(e) => setNewTodo(e.target.value)}
-        placeholder="Add a new todo"
-      />
-      <Button className="todo-container__button" onClick={addTodo}>
-        Add
-      </Button>
+      <form className="todo-form">
+        <input
+          className="todo-container__todo-input"
+          type="text"
+          value={newTodo}
+          onChange={(e) => setNewTodo(e.target.value)}
+          placeholder="Add a new todo"
+        />
+        <Button className="todo-container__button" onClick={addTodo}>
+          Add
+        </Button>
+      </form>
       {todos[0] && (
         <ul className="todo-container__todo-list">
           {todos.map((todo, index) => (
