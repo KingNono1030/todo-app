@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import TodoItem from './TodoItem';
 import Button from './Button';
-import './TodoList.scss';
 
 function TodoList() {
   const [todos, setTodos] = useState([]);
@@ -34,22 +33,22 @@ function TodoList() {
   }, [todos, isInitialized]);
 
   return (
-    <div className="todo-container">
-      <h1 className="todo-container__header-text">Todo List</h1>
-      <form className="todo-form">
+    <div className="py-8 px-12">
+      <h1 className="font-bold text-5xl">Todo List</h1>
+      <form className="">
         <input
-          className="todo-container__todo-input"
+          className="mr-3"
           type="text"
           value={newTodo}
           onChange={(e) => setNewTodo(e.target.value)}
           placeholder="Add a new todo"
         />
-        <Button className="todo-container__button" onClick={addTodo}>
+        <Button className="" onClick={addTodo}>
           Add
         </Button>
       </form>
       {todos[0] && (
-        <ul className="todo-container__todo-list">
+        <ul className="list-none p-0">
           {todos.map((todo, index) => (
             <TodoItem
               key={index}

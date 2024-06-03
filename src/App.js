@@ -1,10 +1,10 @@
 import './reset.css';
-import './App.css';
+
 import TodoList from './components/TodoList';
 
 function App() {
   return (
-    <div className="App">
+    <div className="w-full h-screen text-center">
       <TodoList />
     </div>
   );
